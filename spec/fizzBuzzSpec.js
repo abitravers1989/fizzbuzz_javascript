@@ -1,23 +1,23 @@
 describe("Fizzbuzz", function() {
 
-  it("Prints numbers from 1 to 100", function(){
+  it('returns 1 when passed 1', function(){
 
+    expect(fizzbuzz(1)).toEqual(1);
+  });
 
-   });
+  it('returns fizz when passed 3', function(){
 
-   it("Prints fizz if number is divisible by 3", function(){
+    expect(fizzbuzz(3)).toEqual('fizz');
+  });
 
+  it('returns buzz when passed 5', function(){
 
-    });
+    expect(fizzbuzz(5)).toEqual('buzz');
+  });
 
-    it("Prints buzz if number is divisible by 5", function(){
+  it('returns buzz when passed 5', function(){
 
-
-    });
-
-    it("Prints fizzbuzz if number is divisible by both 3 & 5", function(){
-
-
-    });
+    expect(fizzbuzz(15)).toEqual('fizzbuzz');
+  });
 
 });
