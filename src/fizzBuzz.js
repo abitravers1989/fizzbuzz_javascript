@@ -1,22 +1,23 @@
 
-//similar to starting a class
+//similar to starting a class. Like supiror function
 var FizzBuzz = function(){};
 
-FizzBuzz.prototype.play = funtion(number){
-    if (num %3 === 0){
-          return 'fizz'
-        }
-    else {
-      if (num %5 === 0){
-        return 'buzz'
-    }
-    else {
-      if (num %15 === 0 {
-        return 'fizzbuzz'}
-    }
-    else {
-      return number
-    }
-   }
-  }
+FizzBuzz.prototype.play = function(number) {
+    if(number % 15 === 0) {
+      return 'FizzBuzz'
+}
+  else {
+    if(number % 5 === 0) {
+      return 'Buzz'
+}
+  else {
+    if(number % 3 === 0) {
+      return 'Fizz'
+
+}
+  else {
+    return number
+}
+}
+}
 };

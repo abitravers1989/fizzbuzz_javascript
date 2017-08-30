@@ -1,23 +1,33 @@
-describe("Fizzbuzz", function() {
+describe("FizzBuzz", function() {
 
-  it('returns 1 when passed 1', function(){
+ var fizzBuzz;
 
-    expect(fizzbuzz(1)).toEqual(1);
+ beforeEach(function() {
+    fizzBuzz = new FizzBuzz();
   });
 
-  it('returns fizz when passed 3', function(){
 
-    expect(fizzbuzz(3)).toEqual('fizz');
+ describe("returns fizz when divided by 3", function() {
+    it('fizz for 3', function() {
+      expect(fizzBuzz.play(3)).toEqual('Fizz');
+    });
   });
 
-  it('returns buzz when passed 5', function(){
-
-    expect(fizzbuzz(5)).toEqual('buzz');
+ describe("returns buzz when divided by 5", function() {
+    it('buzz for 5', function() {
+      expect(fizzBuzz.play(5)).toEqual('Buzz');
+    });
   });
 
-  it('returns buzz when passed 5', function(){
-
-    expect(fizzbuzz(15)).toEqual('fizzbuzz');
+ describe("returns fizzbuzz when divided by 3 & 5", function() {
+    it('fizz for 3', function() {
+      expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
+    });
   });
 
+ describe("returns number when not divided by 3 & 5", function() {
+    it('returns same number', function() {
+      expect(fizzBuzz.play(7)).toEqual(7);
+    });
+  });
 });
